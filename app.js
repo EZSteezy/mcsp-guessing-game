@@ -17,7 +17,7 @@ if (!Number.isInteger(num)) {
     alert('You were right!');
     count++
     log.push(num);
-    alert('you got the answer in ' + count + ' tries, and your guesses history is ' + log + '!');
+    alert('you got the answer in ' + count + ' tries, and your guess history is ' + log + '!');
 
 } else if (num > numGen) {
         alert('You guessed too high!');
