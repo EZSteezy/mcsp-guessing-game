@@ -13,7 +13,7 @@ const num = parseInt(numInput);
 if (num === numGen) {
     alert('You were right!');
     count++
-    log.push('and ' + num);
+    log.push(num);
     alert('you got the answer in ' + count + ' tries, and your guesses were ' + log + '!');
 
 } else if (num > numGen) {
