@@ -5,5 +5,7 @@ startGame();
 
 function startGame() {
 let numInput = prompt('pick a number!');
-alert('you picked the number ' + numInput + '!');
+const num = parseInt();
+alert('you picked the number ' + num + '!');
 }
+
