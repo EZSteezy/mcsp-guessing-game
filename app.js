@@ -13,19 +13,19 @@ const num = parseInt(numInput);
 if (num === numGen) {
     alert('You were right!');
     count++
-    log.push(num);
+    log.push(num.toString();
     alert('you got the answer in ' + count + ' tries, and these were your guesses ' + log);
 
 } else if (num > numGen) {
         alert('You guessed too high!');
         count++
         startGame();
-        log.push(num);
+        log.push(num.toString());
         
 } else if (num < numGen) {
         alert('You guessed too low!')
         count++
         startGame();
-        log.push(num);
+        log.push(num.toString());
 }
 }
