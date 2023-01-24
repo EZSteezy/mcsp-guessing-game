@@ -14,7 +14,7 @@ if (num === numGen) {
     alert('You were right!');
 }
 
-while (true) {
+while (num !== numGen) {
 if (num > numGen) {
         alert('You guessed too high!');
         prompt('pick a number!');
