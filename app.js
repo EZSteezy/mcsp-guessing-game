@@ -3,7 +3,7 @@
 let userName;
 let numInput;
 
-startGame():
+startGame();
 
 function startGame() {
 let numInput = prompt('pick a number!');
