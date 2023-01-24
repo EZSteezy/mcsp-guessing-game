@@ -39,7 +39,13 @@ if (!Number.isInteger(num)) {
 function playAgain() {
         let playAgain = prompt('Would you like to play again?');
         if (playAgain == 'yes') {
-                let log = [];
+                emptyGuesses()
                 letsPlay();
 }
+}
+
+function emptyGuesses() {
+        while (log.length > 0) {
+        log.shift();
+        }
 }
