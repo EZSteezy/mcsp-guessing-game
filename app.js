@@ -2,6 +2,7 @@ let numInput;
 let numGen = Math.floor(Math.random() * 10);
 let count = 0
 
+alert('Welcome to what should be a working guessing game!')
 startGame();
 
 function startGame() {
