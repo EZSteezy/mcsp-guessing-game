@@ -6,16 +6,16 @@ startGame();
 
 
 function startGame() {
-
 let numInput = prompt('pick a number!');
 const num = parseInt(numInput);
-
-if (num === numGen) {
-    alert('You were right!');
+function numCheck()
 }
 
-while (num !== numGen) {
-if (num > numGen) {
+
+function numCheck(num) {
+if (num === numGen) {
+    alert('You were right!');
+} else if (num > numGen) {
         alert('You guessed too high!');
         prompt('pick a number!');
 } else if (num < numGen) {
@@ -23,5 +23,5 @@ if (num > numGen) {
         prompt('pick a number!');
 }
 }
-}
+
 
