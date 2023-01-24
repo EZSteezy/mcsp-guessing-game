@@ -39,6 +39,7 @@ if (!Number.isInteger(num)) {
 function playAgain() {
         let playAgain = prompt('Would you like to play again?');
         if (playAgain == 'yes') {
+                let log = [];
                 letsPlay();
 }
 }
