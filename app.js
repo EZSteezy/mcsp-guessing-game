@@ -1,13 +1,16 @@
 let numInput;
 let count = 0;
 let log = [] 
-let numGen;
 
 alert('Welcome to what should be a working guessing game!')
 letsPlay();
 
-function letsPlay() {
+function numGen() {
         let numGen = Math.floor(Math.random() * 10);
+}
+
+function letsPlay() {
+        numGen()
         startGame()
 }
 
