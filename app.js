@@ -2,7 +2,6 @@ let numInput;
 let count = 0;
 let log = []
 let numGen = Math.floor(Math.random() * 10); 
-let playAgain;
 
 alert('Welcome to what should be a working guessing game!')
 letsPlay();
