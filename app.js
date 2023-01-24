@@ -20,7 +20,7 @@ if (num === numGen) {
         
 } else if (num < numGen) {
         alert('You guessed too low!')
-        coount++
+        count++
         startGame();
 }
 }
