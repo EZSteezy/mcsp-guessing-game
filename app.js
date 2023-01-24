@@ -11,7 +11,7 @@ const num = parseInt(numInput);
 if (num === numGen) {
     alert('You were right!');
     count++
-    alert('you got the answer in ' + count + 'tries!');
+    alert('you got the answer in ' + count + ' tries!');
 } else if (num > numGen) {
         alert('You guessed too high!');
         count++
