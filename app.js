@@ -40,6 +40,7 @@ function playAgain() {
         let playAgain = prompt('Would you like to play again?');
         if (playAgain == 'yes') {
                 emptyGuesses()
+                num = num - num;
                 letsPlay();
 }
 }
