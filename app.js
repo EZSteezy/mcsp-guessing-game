@@ -14,8 +14,7 @@ if (num === numGen) {
     alert('You were right!');
     count++
     log.push(num);
-    alert('you got the answer in ' + count + ' tries!');
-    alert('here are all of your guesses!' += log);
+    alert('you got the answer in ' + count + ' tries, and these were your guesses ' + num);
 
 } else if (num > numGen) {
         alert('You guessed too high!');
