@@ -1,6 +1,6 @@
 let userName;
 let numInput;
-let numGen = randomMath.floor(Math.random() * 10);
+let numGen = Math.floor(Math.random() * 10);
 
 
 startGame();
