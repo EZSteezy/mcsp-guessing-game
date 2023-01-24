@@ -44,6 +44,9 @@ function playAgain() {
                 count -= count;
                 numGen = Math.floor(Math.random() * 10);
                 letsPlay();
+        } else if (playAgain == 'no') {
+        } else {
+                alert('That is not yes or no!');
 }
 }
 
