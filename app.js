@@ -12,11 +12,15 @@ const num = parseInt(numInput);
 
 if (num === numGen) {
     alert('You were right!');
-} else if (num > numGen) {
+}
+
+while (true) {
+if (num > numGen) {
         alert('You guessed too high!');
         prompt('pick a number!');
-} else if (num > numGen) {
+} else if (num < numGen) {
         alert('You guessed too low!')
+}
 }
 }
 
