@@ -1,17 +1,13 @@
 let numInput;
 let count = 0;
 let log = []; 
-let numGen; 
+let numGen = Math.floor(Math.random() * 10);; 
 
 alert('Welcome to what should be a working guessing game!')
 letsPlay();
 
-function numGen() {
-        let numGen = Math.floor(Math.random() * 10);
-}
 
 function letsPlay() {
-        numGen()
         startGame()
 }
 
@@ -46,6 +42,7 @@ function playAgain() {
         if (playAgain == 'yes') {
                 emptyGuesses()
                 count -= count;
+                numGen = Math.floor(Math.random() * 10);
                 letsPlay();
 }
 }
