@@ -1,10 +1,14 @@
 let numInput;
-let numGen = Math.floor(Math.random() * 10);
 let count = 0;
 let log = []
 
 alert('Welcome to what should be a working guessing game!')
-startGame();
+letsPlay();
+
+function letsPlay() {
+        let numGen = Math.floor(Math.random() * 10);
+        startGame()
+}
 
 function startGame() {
 let numInput = prompt('pick a number!');
