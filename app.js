@@ -9,20 +9,13 @@ function startGame() {
 
 let numInput = prompt('pick a number!');
 const num = parseInt(numInput);
-guessCheck(num);
-}
-
-
-function guessCheck() {
-
 if (num === numGen) {
     alert('You were right!');
 } else if (num > numGen) {
     alert('You guessed too high!');
-    guessCheck();
+    prompt('pick a number!');
 } else if (num > numGen) {
     alert('You guessed too low!')
-    guessCheck();
 }
 }
 
