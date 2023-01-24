@@ -2,6 +2,7 @@ let numInput;
 let count = 0;
 let log = []
 let numGen = Math.floor(Math.random() * 10); 
+let playAgain;
 
 alert('Welcome to what should be a working guessing game!')
 letsPlay();
@@ -22,7 +23,7 @@ if (!Number.isInteger(num)) {
     count++
     log.push(num);
     alert('you got the answer in ' + count + ' tries, and your guess history is ' + log + '!');
-
+    playAgain();
 } else if (num > numGen) {
         alert('You guessed too high!');
         count++
@@ -33,5 +34,14 @@ if (!Number.isInteger(num)) {
         count++
         log.push(num);
         startGame();
+}
+}
+
+playAgain() {
+        let playAgain = prompt('Would you like to play again?');
+        if (playAgain == 'yes') {
+                letsPlay();
+        } else {
+                continue;
 }
 }
