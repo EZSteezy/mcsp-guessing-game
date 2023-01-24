@@ -10,7 +10,10 @@ function startGame() {
 let numInput = prompt('pick a number!');
 const num = parseInt(numInput);
 
-if (num === numGen) {
+if (!Number.isInteger(num)) {
+        alert('That is not a number!');
+        startGame()
+} else if (num === numGen) {
     alert('You were right!');
     count++
     log.push(num);
