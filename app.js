@@ -20,6 +20,7 @@ if (num > numGen) {
         prompt('pick a number!');
 } else if (num < numGen) {
         alert('You guessed too low!')
+        prompt('pick a number!');
 }
 }
 }
