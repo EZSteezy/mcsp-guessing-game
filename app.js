@@ -7,9 +7,12 @@ let numGen = Math.floor(Math.random() * 10);;
 alert('Welcome to what should be a working guessing game!')
 letsPlay();
 
+function getUser() {
+        let userName = prompt('Hello! What is your name?')
+}
 
 function letsPlay() {
-        let userName = prompt('Hello! What is your name?')
+        getUser()
         startGame()
 }
 
