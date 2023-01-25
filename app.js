@@ -47,7 +47,12 @@ function playAgain() {
         } else if (playAgain == 'no') {
         } else {
                 alert('That is not yes or no!');
+                wrongAnswer();
 }
+}
+
+function wrongAnswer() {
+        playAgain()
 }
 
 function emptyGuesses() {
