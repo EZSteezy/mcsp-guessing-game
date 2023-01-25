@@ -50,9 +50,9 @@ function guessCompare() {
 }
 
 function logLastAttempt() {
-        userList = {
-                user: userName,
-                tries: count
+userList = {
+        user: userName,
+        tries: count
 }
 }
 
