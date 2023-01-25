@@ -2,34 +2,37 @@ let numInput;
 let count = 0;
 let log = []; 
 let numGen = Math.floor(Math.random() * 10);; 
+let userName;
 
 alert('Welcome to what should be a working guessing game!')
-letsPlay();
+userCall();
+startGame();
 
-function letsPlay() {
-        startGame()
+function userCall() {
+        userName = prompt('Enter your username!');
+        alert('Hello ' + userName + '!');
 }
 
 function startGame() {
-let numInput = prompt('pick a number!');
-const num = parseInt(numInput);
+        let numInput = prompt('Pick a number!');
+        const num = parseInt(numInput);
 
 if (!Number.isInteger(num)) {
         alert('That is not a number!');
         startGame()
 } else if (num === numGen) {
-    alert('You were right!');
-    count++
-    log.push(num);
-    alert('You got the answer in ' + count + ' tries, and your guess history is ' + log + '!');
-    playAgain();
+        alert('You were right!');
+        count++
+        log.push(num);
+        alert('Woah, ' + userName + ', you got the answer in ' + count + ' tries, and your guess history is ' + log + '!');
+        playAgain();
 } else if (num > numGen) {
-        alert('You guessed too high!');
+        alert('Ouch! ' + userName + ', you guessed too high!');
         count++
         log.push(num);
         startGame();
 } else if (num < numGen) {
-        alert('You guessed too low!')
+        alert('Ouch! ' + userName + ', you guessed too low!')
         count++
         log.push(num);
         startGame();
@@ -37,20 +40,20 @@ if (!Number.isInteger(num)) {
 }
 
 function playAgain() {
-        let playAgain = prompt('Would you like to play again?');
-        if (playAgain == 'yes') {
-                emptyGuesses()
-                count -= count;
-                numGen = Math.floor(Math.random() * 10);
-                letsPlay();
-        } else if (playAgain == 'no') {
-        } else {
-                alert('That is not yes or no!');
-                wrongAnswer();
+        let playAgain = prompt('Hey, ' + userName + ', would you like to play again?');
+if (playAgain == 'yes') {
+        emptyGuesses()
+        count -= count;
+        numGen = Math.floor(Math.random() * 10);
+        startGame();
+} else if (playAgain == 'no') {
+} else {
+        alert('That is not yes or no!');
+        notYesOrNo();
 }
 }
 
-function wrongAnswer() {
+function notYesOrNo() {
         playAgain()
 }
 
