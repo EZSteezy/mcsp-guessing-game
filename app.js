@@ -3,6 +3,8 @@ let count = 0;
 let log = []; 
 let numGen = Math.floor(Math.random() * 10);; 
 let userName;
+let userList = {};
+let diff;
 
 alert('Welcome to what should be a working guessing game!')
 userCall();
@@ -25,6 +27,8 @@ if (!Number.isInteger(num)) {
         count++
         log.push(num);
         alert('Woah, ' + userName + ', you got the answer in ' + count + ' tries, and your guess history is ' + log + '!');
+        guessCompare()
+        logLastAttempt()
         playAgain();
 } else if (num > numGen) {
         alert('Ouch! ' + userName + ', you guessed too high!');
@@ -36,6 +40,19 @@ if (!Number.isInteger(num)) {
         count++
         log.push(num);
         startGame();
+}
+}
+function guessCompare() {
+        if (count < userList.tries && userList.tries !== undefined && userList.user == userName) {
+        diff = userList.tries - count;
+        alert('Congratulations! You beat your last try by ' + diff + '!');
+        }
+}
+
+function logLastAttempt() {
+        userList = {
+                user: userName,
+                tries: count
 }
 }
 
@@ -62,3 +79,4 @@ function emptyGuesses() {
         log.shift();
         }
 }
+console.log(userList)
