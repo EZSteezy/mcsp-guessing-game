@@ -79,4 +79,3 @@ function emptyGuesses() {
         log.shift();
         }
 }
-console.log(userList)
