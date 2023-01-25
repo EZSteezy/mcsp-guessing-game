@@ -1,5 +1,4 @@
 let numInput;
-let userName;
 let count = 0;
 let log = []; 
 let numGen = Math.floor(Math.random() * 10);; 
@@ -7,12 +6,7 @@ let numGen = Math.floor(Math.random() * 10);;
 alert('Welcome to what should be a working guessing game!')
 letsPlay();
 
-function getUser() {
-        let userName = prompt('Hello! What is your name?')
-}
-
 function letsPlay() {
-        getUser()
         startGame()
 }
 
@@ -24,18 +18,18 @@ if (!Number.isInteger(num)) {
         alert('That is not a number!');
         startGame()
 } else if (num === numGen) {
-    alert(username + ', you were right!');
+    alert('You were right!');
     count++
     log.push(num);
-    alert(userName + ', you got the answer in ' + count + ' tries, and your guess history is ' + log + '!');
+    alert('You got the answer in ' + count + ' tries, and your guess history is ' + log + '!');
     playAgain();
 } else if (num > numGen) {
-        alert('You guessed too high, ' + userName '!');
+        alert('You guessed too high!');
         count++
         log.push(num);
         startGame();
 } else if (num < numGen) {
-        alert('You guessed too low, ' + userName '!')
+        alert('You guessed too low!')
         count++
         log.push(num);
         startGame();
